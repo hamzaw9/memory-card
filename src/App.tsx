@@ -1,7 +1,11 @@
+import Header from "./components/Header"
+
 function App() {
 
   return (
-    <h1 className="text-center">Memory Card</h1>
+    <div className="bg-[#abd1c6] min-h-screen px-4">
+      <Header />
+    </div>
   )
 }
 
