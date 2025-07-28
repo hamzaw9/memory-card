@@ -42,14 +42,12 @@ const ImageCard = ({
     if (gameOver) {
       setImages(originalImages);
     }
-  }, [gameOver, originalImages]);
+  }, [gameOver]);
 
   const handleImageShuffle = (id: number) => {
-    if (!gameOver) {
       const shuffled = [...images].sort(() => Math.random() - 0.5);
       setImages(shuffled);
       handleCurrentImage(id);
-    }
   };
 
   if (loading)
