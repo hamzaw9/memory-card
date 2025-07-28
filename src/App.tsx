@@ -1,7 +1,11 @@
+import ImageCard from "./components/ImageCard"
+
 function App() {
 
   return (
-    <h1 className="text-center">Memory Card</h1>
+    <div>
+      <ImageCard />
+    </div>
   )
 }
 
